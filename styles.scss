@@ -146,6 +146,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     &__header {
         width: 50%;
+        // max-width: 587px;
     }
     &__pg {
         font-size: 1.7rem;
