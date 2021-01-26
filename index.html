@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Haven</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7aab05b536.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="container">
+
+    <header class="mb-md">
+        <!-- <img src="/img/header.png" alt="" class="bg_img"> -->
+        <nav class="menu">
+            <div class="menu__logo">
+                <img src="/img/logo.png" alt="">
+            </div>
+            <ul class="navigation navigation__menu">
+                <li class="navigation__item">
+                    <a href="#home" class="navigation__link">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#categories" class="navigation__link mr-sm">Categories</a><i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">About us</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#agents" class="navigation__link">Agents</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#blog" class="navigation__link">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link">Contact us</a>
+                </li>
+
+            </ul>
+            <ul class="navigation navigation__action">
+                <li class="navigation__item">
+                    <a href="#login" class="navigation__link" id="login">Log in</a>
+                </li>
+                <li>
+                    <button class="navigation__link btn btn-secondary">sign up</button>
+                </li>
+            </ul>
+
+            <!-- <button class="navigation__icon">
+            <svg class="icon icon-menu">
+              <use xlink:href="/icomoon/sprite.svg#icon-menu"></use>
+            </svg>
+          </button> -->
+        </nav>
+
+        <div class="header__hero mb-md mt-md">
+            <h1 class="heading-1 header__hero__header"> <span> Home </span> is where your WI-Fi connects automatically</h1>
+            <p class="header__hero__pg mt-1">Let’s help you find a homely apartment! 🚀🔥</p>
+            <div class="header__hero__search mt-2">
+                <ul class="header__hero__navigation">
+                    <li class="header__hero__navigation__item">
+                        <a href="#" class="header__hero__navigation__link">Sale</a><i class="ml-sm fas fa-chevron-down"></i>
+                    </li>
+                    <li class="header__hero__navigation__item">
+                        <a href="#" class="header__hero__navigation__link">Type</a><i class="ml-sm fas fa-chevron-down"></i>
+                    </li>
+                    <li class="header__hero__navigation__item">
+                        <a href="#" class="header__hero__navigation__link">Bedrooms </a><i class="ml-sm fas fa-chevron-down"></i>
+                    </li>
+                    <li class="header__hero__navigation__item">
+                        <a href="#" class="header__hero__navigation__link">Min price</a><i class="ml-sm fas fa-chevron-down"></i>
+                    </li>
+                    <li class="header__hero__navigation__item">
+                        <a href="#" class="header__hero__navigation__link">Max price</a><i class="ml-sm fas fa-chevron-down"></i>
+                    </li>
+                </ul>
+                <button class="header__hero__btn btn btn-primary"> search</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- <nav class="mobile" id="mobile" style="display: none">
+        <button class="mobile__icon">
+        <svg class="icon icon-menu">
+          <use xlink:href="/icomoon/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#services" class="navigation__link">Services</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#works" class="navigation__link">Our Works</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#clients" class="navigation__link">Clients</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#contacts" class="navigation__link">Contact</a>
+            </li>
+        </ul> -->
+
+    <section class="listings mb-md">
+        <div class="section__header mb-2">
+            <h2 class="heading-2">New listings</h2>
+            <h5 class="heading-5">View all listings</h5>
+        </div>
+        <div class="listings__container">
+            <div class="card pst-relative">
+                <span class="fav"> <i class="far fa-heart fav__icon"></i></span>
+                <figure class="figure">
+                    <img src="/img/card 1.png" alt="" class="figure__image">
+                </figure>
+                <ul class="tag">
+                    <li class="tag__item">
+                        <span class="tag__content">Premium plus</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">7 Toilets</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">6 Bathrooms</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">5 Parking lots</span>
+                    </li>
+                </ul>
+                <div class="row mt-1">
+                    <h4 class="title mr-auto">6 bedroom detached duplex</h4>
+                    <a href="#" class="flex-end inline-link"> View details</a>
+                </div>
+                <div class="row mt-1">
+                    <div class="location">
+                        <i class="location__icon fas fa-map-marker-alt mr-1"></i>
+                        <p> 9,Ugochukwu Duru Street, Lekki, Lagos</p>
+                    </div>
+                </div>
+                <div class="row mt-1">
+
+                    <div class="location">
+                        <i class="location__icon fas fa-phone-alt mr-sm"></i>
+                        <p> +234 701 906 8634</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card pst-relative">
+                <span class="fav"> <i class="far fa-heart fav__icon"></i></span>
+                <figure class="figure">
+                    <img src="/img/card 2.png" alt="" class="figure__image">
+                </figure>
+                <ul class="tag">
+                    <li class="tag__item">
+                        <span class="tag__content">Premium plus</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">7 Toilets</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">6 Bathrooms</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">5 Parking lots</span>
+                    </li>
+                </ul>
+                <div class="row mt-1">
+                    <h4 class="title mr-auto">6 bedroom detached duplex</h4>
+                    <a href="#" class="flex-end inline-link"> View details</a>
+                </div>
+                <div class="row mt-1">
+                    <div class="location">
+                        <i class="location__icon fas fa-map-marker-alt mr-1"></i>
+                        <p> 9,Ugochukwu Duru Street, Lekki, Lagos</p>
+                    </div>
+                </div>
+                <div class="row mt-1">
+
+                    <div class="location">
+                        <i class="location__icon fas fa-phone-alt mr-sm"></i>
+                        <p> +234 701 906 8634</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card pst-relative">
+                <span class="fav"> <i class="far fa-heart fav__icon"></i></span>
+                <figure class="figure">
+                    <img src="/img/card 3.png" alt="" class="figure__image">
+                </figure>
+                <ul class="tag">
+                    <li class="tag__item">
+                        <span class="tag__content">Premium plus</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">7 Toilets</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">6 Bathrooms</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">5 Parking lots</span>
+                    </li>
+                </ul>
+                <div class="row mt-1">
+                    <h4 class="title mr-auto">6 bedroom detached duplex</h4>
+                    <a href="#" class="flex-end inline-link"> View details</a>
+                </div>
+                <div class="row mt-1">
+                    <div class="location">
+                        <i class="location__icon fas fa-map-marker-alt mr-1"></i>
+                        <p> 9,Ugochukwu Duru Street, Lekki, Lagos</p>
+                    </div>
+                </div>
+                <div class="row mt-1">
+
+                    <div class="location">
+                        <i class="location__icon fas fa-phone-alt mr-sm"></i>
+                        <p> +234 701 906 8634</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card pst-relative">
+                <span class="fav"> <i class="far fa-heart fav__icon"></i></span>
+                <figure class="figure">
+                    <img src="/img/card 4.png" alt="" class="figure__image">
+                </figure>
+                <ul class="tag">
+                    <li class="tag__item">
+                        <span class="tag__content">Premium plus</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">7 Toilets</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">6 Bathrooms</span>
+                    </li>
+                    <li class="tag__item">
+                        <span class="tag__content">5 Parking lots</span>
+                    </li>
+                </ul>
+                <div class="row mt-1">
+                    <h4 class="title mr-auto">6 bedroom detached duplex</h4>
+                    <a href="#" class="flex-end inline-link"> View details</a>
+                </div>
+                <div class="row mt-1">
+                    <div class="location">
+                        <i class="location__icon fas fa-map-marker-alt mr-1"></i>
+                        <p> 9,Ugochukwu Duru Street, Lekki, Lagos</p>
+                    </div>
+                </div>
+                <div class="row mt-1">
+
+                    <div class="location">
+                        <i class="location__icon fas fa-phone-alt mr-sm"></i>
+                        <p> +234 701 906 8634</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about mb-md">
+        <div class="section__header mb-2">
+            <h2 class="heading-2">About Safe Haven</h2>
+        </div>
+        <div class="about__container">
+            <div class="card border-none p-0">
+                <div class="uneven-grid">
+                    <figure class=" figure__1"><img src="/img/card 5.png" alt="" class="figure__img figure__1--img"></figure>
+                    <figure class="figure__2"><img src="/img/card 6.png" alt="" class="figure__img figure__2--img"></figure>
+                    <figure class="figure__3"><img src="/img/card 7.png" alt="" class="figure__img figure__3--img"></figure>
+                    <figure class="figure__4"><img src="/img/card 15.png" alt="" class="figure__img figure__4--img"></figure>
+                </div>
+            </div>
+            <div class="card border-none p-0">
+                <div class=" mt-3">
+                    <p class="description"> Safe Haven is a real estate and property website in Nigeria with property listings for sale, rent and lease. We offer Nigerian property seekers an easy way to find details of property like homes, houses, lands, shops, office spaces
+                        and other commercial properties to buy or rent. Safe Haven provides a platform for advertising property from organisations and Nigerian private property owners. </p>
+                    <p class="description mt-1">Safe Haven is the clear leading property website with lots of users, advertising members and properties. Our advertisers are property professionals such as estate agents, letting (rental) agents, new homes developers and Nigerian private
+                        property owners who offer properties within Nigeria for property hunters.</p>
+                </div>
+                <div class="row mt-2">
+                    <div class="stats">
+                        <div class="stat">
+                            <h3 class="stat__count">345</h3>
+                            <p>Areas covered</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__count">4,656</h3>
+                            <p>Property listing</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__count">45</h3>
+                            <p>Agents</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="agents mb-md">
+        <div class="agents__header section__header mb-2">
+            <h2 class="heading-2">Word On The Street</h2>
+        </div>
+        <div class="agents__container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque itaque asperiores voluptatum aperiam, nesciunt veritatis blanditiis cum consectetur excepturi reprehenderit officiis quas enim impedit similique ipsum! Qui voluptatem cupiditate nemo!
+        </div>
+
+    </section>
+    <section class="blogs mb-md">
+        <div class="section__header mb-2">
+            <h2 class="heading-2">Blog Posts</h2>
+        </div>
+
+    </section>
+
+    <footer class="footer" id="contacts">
+        <nav class="footer__navigation">
+            <ul class="footer__navigation__items">
+                <li class="footer__navigation__item">
+                    <a href="#home" class="footer__navigation__link">Home</a>
+                </li>
+                <li class="footer__navigation__item">
+                    <a href="#services" class="footer__navigation__link">Services</a>
+                </li>
+                <li class="footer__navigation__item">
+                    <a href="#works" class="footer__navigation__link">Our Works</a>
+                </li>
+                <li class="footer__navigation__item">
+                    <a href="#clients" class="footer__navigation__link">Clients</a>
+                </li>
+                <li class="footer__navigation__item">
+                    <a href="#contact" class="footer__navigation__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="footer__social">
+                <div class="footer__logo">eddie</div>
+                <div class="footer__socials">
+                    <img src="/img/instagram.svg" alt="" />
+                    <img src="/img/linkedin.svg" alt="" />
+                    <img src="/img/twitter.svg" alt="" />
+                </div>
+            </div> -->
+        <div class="hero__contact">
+            <p>Want us to contact you?</p>
+            <input type="text" class="hero__input" placeholder="Email" />
+            <button class="hero__button">Join</button>
+        </div>
+        <div class="footer__copy">
+            <p class="">Taofeeq @ DevChallenges.io</p>
+        </div>
+    </footer>
+    <script>
+        // const menuButton = document.querySelector('.navigation__icon')
+        // const mobileMenu = document.querySelector('#mobile')
+        // const mobileIcon = document.querySelector('.mobile__icon')
+
+        // function displayMenuItem() {
+        //     if (mobileMenu.style.display == 'none') {
+        //         mobileMenu.style.display = 'block'
+        //         mobileMenu.style.width = '100%'
+        //     }
+        // }
+
+        // function hideMenuItem() {
+        //     if (mobileMenu.style.display == 'block') {
+        //         mobileMenu.style.display = 'none'
+        //         mobileMenu.style.width = '0px'
+        //     }
+        // }
+        // menuButton.addEventListener('click', displayMenuItem)
+        // mobileIcon.addEventListener('click', hideMenuItem)
+    </script>
+</body>
+
+</html>
