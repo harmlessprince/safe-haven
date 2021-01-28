@@ -11,6 +11,8 @@
     --color-black: #25033E;
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Heebo', sans-serif;
+    --color-tag-color-1: #00B569;
+    --color-tag-bg-1: #00B569;
     --mb-sm: 2rem;
     --mb-md: 3rem;
     --mb-lg: 4rem;
@@ -155,7 +157,7 @@ header {
     &__search {
         background: #FFFFFF;
         box-shadow: 0px 2px 24px rgba(120, 0, 210, 0.07);
-        width: 80%;
+        max-width: 80vw;
         padding: .5rem .5rem;
         border-radius: 5rem;
         display: flex;
@@ -201,7 +203,7 @@ header {
     width: 100%;
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         column-gap: 2rem;
         row-gap: 2rem;
     }
@@ -215,7 +217,7 @@ header {
     width: 100%;
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         column-gap: 3rem;
         row-gap: 3rem;
     }
@@ -233,7 +235,7 @@ header {
         background-color: orange;
         padding: 0em 8rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         column-gap: 2rem;
         row-gap: 2rem;
     }
@@ -247,7 +249,7 @@ header {
     width: 100%;
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         column-gap: 2rem;
         row-gap: 2rem;
     }
@@ -285,19 +287,21 @@ header {
 .tag {
     list-style-type: none;
     display: flex;
+    align-items: center;
     color: #25033E;
     font-size: 1.3rem;
     line-height: 1.6rem;
     margin-top: 1.5rem;
     &__item {
-        padding: .7rem;
-        background: rgba(37, 3, 62, 0.15);
-        border-radius: 5px;
         &:not(:last-child) {
             margin-right: 1.5rem;
         }
     }
-    &__content {}
+    &__content {
+        padding: .7rem;
+        background: rgba(37, 3, 62, 0.15);
+        border-radius: 5px;
+    }
 }
 
 .location {
@@ -314,13 +318,16 @@ header {
 .figure {
     border-radius: 5px;
     overflow: hidden;
-    height: 30rem;
     &__image {
         width: 100%;
         object-fit: cover;
         object-position: center;
         height: 100%;
     }
+}
+
+.fig-height {
+    height: 30rem;
 }
 
 .inline-link {
@@ -538,6 +545,25 @@ header {
 
 .p-0 {
     padding: 0;
+}
+
+.tag {
+    &-1 {
+        color: var(--color-tag-color-1);
+        background-color: rgba(#00B569, .15);
+    }
+    &-2 {
+        color: #7800D2;
+        background-color: rgba(#7800D2, .15);
+    }
+    &-3 {
+        color: #F95B02;
+        background-color: rgba(#F95B02, .15);
+    }
+    &-4 {
+        color: #7800D2;
+        background-color: rgba(#7800D2, .15);
+    }
 }
 
 //---------------------------------------typographies----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
