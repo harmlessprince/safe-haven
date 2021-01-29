@@ -13,7 +13,7 @@
 
 <body class="container">
 
-    <header class="mb-md">
+    <header class="mb-md" id="home">
         <!-- <img src="/img/header.png" alt="" class="bg_img"> -->
         <nav class="menu">
             <div class="menu__logo">
@@ -24,7 +24,7 @@
                     <a href="#home" class="navigation__link">Home</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#categories" class="navigation__link mr-sm">Categories</a><i class="fas fa-chevron-down"></i>
+                    <a href="#category" class="navigation__link mr-sm">Categories</a><i class="fas fa-chevron-down"></i>
                 </li>
                 <li class="navigation__item">
                     <a href="#about" class="navigation__link">About us</a>
@@ -106,7 +106,7 @@
             </li>
         </ul> -->
 
-    <section class="listings mb-md">
+    <section class="listings mb-md" id="category">
         <div class="section__header mb-2">
             <h2 class="heading-2">New listings</h2>
             <h5 class="heading-5">View all listings</h5>
@@ -263,7 +263,7 @@
         </div>
     </section>
 
-    <section class="about mb-md">
+    <section class="about mb-md" id="about">
         <div class="section__header mb-2">
             <h2 class="heading-2">About Safe Haven</h2>
         </div>
@@ -305,16 +305,25 @@
 
     </section>
 
-    <section class="agents mb-md">
+    <section class="agents mb-md" id="agents">
         <div class="agents__header section__header mb-2">
             <h2 class="heading-2">Word On The Street</h2>
         </div>
         <div class="agents__container">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque itaque asperiores voluptatum aperiam, nesciunt veritatis blanditiis cum consectetur excepturi reprehenderit officiis quas enim impedit similique ipsum! Qui voluptatem cupiditate nemo!
+            <div class="agents__quote">
+                <p class="agents__quote--word">Christopher Edward Nolan CBE is a British-American film director, producer, and screenwriter. His directorial efforts have grossed more than US$5.1 billion worldwide, garnered 34 Oscar nominations and ten wins. </p>
+                <h3 class="agents__quote--name mt-1">John David Washington</h3>
+                <p class="agents__location">ABUJA, NIGERIA</p>
+            </div>
+            <div class="agents__nav">
+                <svg class="icon icon-arrow-left agents__nav--left"><use xlink:href="/icomoon/sprite.svg#icon-arrow-left"></use></svg>
+                <svg class="icon icon-arrow-right agents__nav--right"><use xlink:href="/icomoon/sprite.svg#icon-arrow-right"></use></svg>
+            </div>
+            <button class="agents__btn btn btn-primary mt-2"> READ STORY</button>
+            <figure class="agents__figure"><img src="/img/gustavo.jpg" alt="" class="agents__image"></figure>
         </div>
-
     </section>
-    <section class="blogs mb-md">
+    <section class="blogs mb-md" id="blog">
         <div class="section__header mb-2">
             <h2 class="heading-2">Blog Posts</h2>
         </div>
@@ -419,7 +428,7 @@
 
     </section>
 
-    <footer class="footer" id="contacts">
+    <footer class="footer" id="contact">
         <div class="footer__container">
             <img src="/img/logo.png" alt="">
             <ul class="footer__navigation">
@@ -477,9 +486,12 @@
                     <a href="#works" class="footer__navigation__link">Instagram</a>
                 </li>
             </ul>
+
         </div>
 
-
+        <p style="text-align: center; font-size: 1.7rem;" class="mt-2">
+            Desingned Feyisayo Faloye and developed by Taofeeq Adewuyi
+        </p>
     </footer>
     <script>
         // const menuButton = document.querySelector('.navigation__icon')
