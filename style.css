@@ -121,7 +121,7 @@ header {
   .header__hero__search {
     background: #FFFFFF;
     box-shadow: 0px 2px 24px rgba(120, 0, 210, 0.07);
-    max-width: 80vw;
+    max-width: 70vw;
     padding: .5rem .5rem;
     border-radius: 5rem;
     display: flex; }
@@ -189,6 +189,90 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 2rem;
     row-gap: 2rem; }
+
+.platform {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%; }
+  .platform__container {
+    display: grid;
+    border-radius: 60px;
+    background-color: #A125FF;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0 5rem; }
+  .platform__1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0px; }
+    .platform__1 > * {
+      margin-top: 2rem; }
+    .platform__1--heading {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+      color: #fff; }
+    .platform__1--description {
+      font-size: 2.4rem;
+      line-height: 4.8rem;
+      color: #fff; }
+  .platform__2 {
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: flex-start; }
+  .platform__3 {
+    padding-top: 10rem;
+    display: flex; }
+    .platform__3 img {
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; }
+  .platform__download {
+    display: flex; }
+    .platform__download__btn {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      display: flex;
+      padding: 2rem;
+      margin-right: 1.5rem;
+      align-items: center; }
+      .platform__download__btn--icon {
+        font-size: 4rem;
+        margin-right: 1rem; }
+      .platform__download__btn--span {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column; }
+        .platform__download__btn--span h5 {
+          font-size: 2rem;
+          font-weight: bold; }
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%; }
+  .footer__container {
+    display: grid;
+    border-radius: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .footer__navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; }
+    .footer__navigation h4 {
+      color: #25033E;
+      font-size: 1.7rem;
+      line-height: 2.1rem;
+      margin-bottom: 1.5rem; }
+    .footer__navigation__item:not(:last-child) {
+      margin-bottom: 1rem; }
+    .footer__navigation__link:link, .footer__navigation__link:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #665275; }
 
 .btn {
   padding: 2rem 6.7rem;

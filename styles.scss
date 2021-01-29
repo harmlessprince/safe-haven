@@ -157,7 +157,7 @@ header {
     &__search {
         background: #FFFFFF;
         box-shadow: 0px 2px 24px rgba(120, 0, 210, 0.07);
-        max-width: 80vw;
+        max-width: 70vw;
         padding: .5rem .5rem;
         border-radius: 5rem;
         display: flex;
@@ -256,6 +256,122 @@ header {
 }
 
 //---------------------------------------BLOGS----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
+//---------------------------------------PLATFORM----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
+.platform {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    &__container {
+        display: grid;
+        border-radius: 60px;
+        background-color: #A125FF;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 0 5rem;
+    }
+    &__1 {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0px;
+        &>* {
+            margin-top: 2rem;
+        }
+        &--heading {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 4.8rem;
+            line-height: 5.8rem;
+            color: #fff;
+        }
+        &--description {
+            font-size: 2.4rem;
+            line-height: 4.8rem;
+            color: #fff;
+        }
+    }
+    &__2 {
+        padding-bottom: 6rem;
+        display: flex;
+        justify-content: flex-start;
+        img {}
+    }
+    &__3 {
+        padding-top: 10rem;
+        display: flex;
+        // justify-content: flex-start;
+        img {
+            width: 100%;
+            border-top-right-radius: 10px; // width: 80%;
+            border-top-left-radius: 10px; // width: 80%;
+            // height: 100%;
+        }
+    }
+    &__download {
+        display: flex;
+        &__btn {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            display: flex;
+            padding: 2rem;
+            margin-right: 1.5rem;
+            align-items: center;
+            &--icon {
+                font-size: 4rem;
+                margin-right: 1rem;
+            }
+            &--span {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                h5 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//---------------------------------------PLATFORM----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
+//---------------------------------------FOOTER----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    &__container {
+        display: grid;
+        border-radius: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    &__navigation {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        h4 {
+            color: #25033E;
+            font-size: 1.7rem;
+            line-height: 2.1rem;
+            margin-bottom: 1.5rem;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+        &__link {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                color: #665275;
+            }
+        }
+    }
+}
+
+//---------------------------------------FOOTER----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
 //---------------------------------------Components----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
 .btn {
     padding: 2rem 6.7rem;
