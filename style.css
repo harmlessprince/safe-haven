@@ -558,3 +558,41 @@ header {
 .tag-4 {
   color: #7800D2;
   background-color: rgba(120, 0, 210, 0.15); }
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes moveRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
