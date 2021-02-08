@@ -239,10 +239,12 @@ header {
   width: 100%; }
   .platform__container {
     display: grid;
-    border-radius: 60px;
-    background-color: #A125FF;
     grid-template-columns: 2fr 1fr 1fr;
-    padding: 0 5rem; }
+    padding: 0 5rem;
+    background-image: url("/img/platform.png");
+    background-position: inherit;
+    background-size: cover;
+    overflow: hidden; }
   .platform__1 {
     display: flex;
     flex-direction: column;
