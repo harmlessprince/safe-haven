@@ -314,17 +314,21 @@ header {
 //---------------------------------------PLATFORM----------------------------------------->>>>>>>>>>>>>>>>>>>>>>>
 .platform {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    // padding-bottom: 5rem;
     width: 100%;
+    // background-color: black;
     &__container {
-        display: grid;
+        // background-color: green;
+        // display: grid;
         // border-radius: 60px;
         // background-color: #A125FF;
-        grid-template-columns: 2fr 1fr 1fr;
+        // grid-template-columns: 2fr 1fr 1fr;
         padding: 0 5rem;
         background-image: url("/img/platform.png");
-        background-position: inherit;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // background-size: 100% 100%;
         overflow: hidden;
     }
     &__1 {
@@ -347,25 +351,9 @@ header {
             color: #fff;
         }
     }
-    &__2 {
-        padding-bottom: 6rem;
-        display: flex;
-        justify-content: flex-start;
-        img {}
-    }
-    &__3 {
-        padding-top: 10rem;
-        display: flex;
-        // justify-content: flex-start;
-        img {
-            width: 100%;
-            border-top-right-radius: 10px; // width: 80%;
-            border-top-left-radius: 10px; // width: 80%;
-            // height: 100%;
-        }
-    }
     &__download {
         display: flex;
+        margin-bottom: 5rem;
         &__btn {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
